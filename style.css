@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: whitesmoke;
+  color: rgb(1, 17, 31);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  height: 30%;
+}
+
+.centered {
+  color: #f1f1f1;
+  position: absolute;
+  top: 15rem;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-family: "Courgette", cursive;
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(20, 20, 88);
+  color: aliceblue;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 25px;
+}
+nav ul li a:hover {
+  color: aqua;
+  font-size: 1.1rem;
+}
+nav ul li {
+  list-style: none;
+  align-self: center;
+}
+.left {
+  font-size: 1.6rem;
+
+  font-family: "Lobster", cursive;
+}
+.first {
+  display: flex;
+  flex: wrap;
+  justify-content: space-around;
+  margin: 110px 0px;
+  font-family: "Courgette", cursive;
+  font-family: "Lobster", cursive;
+}
+.leftsection {
+  margin: 90px;
+  font-size: 2rem;
+  align-items: center;
+}
+.rightsection {
+  margin: 90px;
+}
+.purple {
+  color: rgb(64, 3, 86);
+}
+
+.first > div {
+  width: 30%;
+  height: 50vh;
+}
+#element {
+  color: rgb(0, 24, 13);
+}
+
+
+.thirdsection {
+  margin-top: 10vh;
+  margin-left: 12vw;
+  max-width: 80vw;
+  height: 70vh;
+  font-family: "Courgette", cursive;
+  font-family: "Lobster", cursive;
+}
+
+.card {
+  padding: 5px 0;
+  box-shadow: 3px 2px 6px;
+  display: flex;
+  flex-direction: col;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body {
+  padding: 1rem 0 1rem 0;
+}
+
+
+
+
+.thirdsection h1 {
+  margin: 40px auto;
+  font-size: 2.5rem;
+}
+main hr {
+  height: 1.2px;
+  background: rgb(162, 106, 2);
+  margin: 50px 84px;
+}
+
+
+.thirdsection {
+  margin-left: 12vw;
+  max-width: 80vw;
+  height: 85vh;
+}
+
+.fix-image {
+  width: 100%;
+  min-height: 214px;
+  max-width: 214px;
+}
+
+.lefti {
+  margin: 50px;
+  font-size: 2rem;
+  align-items: center;
+  height: 70vh;
+  width: 30vw;
+  background-color: blueviolet;
+}
+.righti {
+  margin: 50px;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 60px;
+  right: 45px;
+  font-size: 60px;
+  z-index: 1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: block;
+  padding: 80px;
+  text-align: center;
+}
+
+.hide{
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+}
+
+.right ul li span {
+  padding-left: 30px;
+}
+.slideshow-container {
+  background-color: rgb(190, 214, 247);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  background-color: #fbfbfb;
+  padding: 20px;
+}
+
+.grid-container > div {
+
+  background-color: rgba(249, 246, 246, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: x-small;
+}
+
+.item2 {
+  
+  grid-row-start: 1 ;
+  grid-row-end: 3;
+  
+}
+.grid{
+text-align: center;
+}
+@media Screen and (max-width: 450px){
+  
+}
